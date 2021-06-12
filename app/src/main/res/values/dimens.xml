@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontalMarginDetail">4dp</dimen>
+    <dimen name="horizontalMarginSmall">8dp</dimen>
+    <dimen name="horizontalMargin">16dp</dimen>
+    <dimen name="horizontalMarginMedium">24dp</dimen>
+    <dimen name="horizontalMarginLarge">32dp</dimen>
+    <dimen name="horizontalMarginXLarge">48dp</dimen>
+    <dimen name="horizontalMarginXXLarge">64dp</dimen>
+    <dimen name="verticalMarginDetail">4dp</dimen>
+    <dimen name="verticalMarginSmall">8dp</dimen>
+    <dimen name="verticalMargin">16dp</dimen>
+    <dimen name="verticalMarginMedium">24dp</dimen>
+    <dimen name="verticalMarginLarge">32dp</dimen>
+    <dimen name="verticalMarginXLarge">48dp</dimen>
+    <dimen name="verticalMarginXXLarge">64dp</dimen>
+    <dimen name="verticalMarginXXXLarge">92dp</dimen>
+    <dimen name="verticalMarginSuperLarge">160dp</dimen>
+    <dimen name="verticalMarginSuperXLarge">180dp</dimen>
+    <dimen name="matchConstraint">0dp</dimen>
+    <dimen name="dividerThin">1dp</dimen>
+
+    <!--CORNER-->
+    <dimen name="cornerNone">0dp</dimen>
+    <dimen name="cornerSmall">4dp</dimen>
+    <dimen name="cornerMedium">8dp</dimen>
+    <dimen name="cornerBig">16dp</dimen>
+    <dimen name="cornerExtraBig">24dp</dimen>
+    <dimen name="cornerPill">999dp</dimen>
+    <dimen name="cornerTopRight">32dp</dimen>
+    <dimen name="cornerFullyRounded">25dp</dimen>
+    <dimen name="cornerChatFragment">32dp</dimen>
+
+    <!--TEXT-->
+    <dimen name="text_title">28sp</dimen>
+    <dimen name="text_subtitle">24sp</dimen>
+    <dimen name="text_subtitle_small">18sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <!--BUTTON-->
+    <dimen name="button_size">60dp</dimen>
+    <dimen name="stroke_size">2dp</dimen>
+
+
+</resources>

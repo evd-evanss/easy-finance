@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Easy Finance</string>
+
+    <!--ACTIONS-->
+    <string name="action_ok">OK</string>
+    <string name="action_ok_understood">OK, ENTENDI</string>
+    <string name="action_yes">SIM</string>
+    <string name="action_not">NÃO</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_change">Alterar</string>
+    <string name="action_try_again">Tentar novamente</string>
+    <string name="action_continue">Continuar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_enter">Entrar</string>
+    <string name="action_enter_again">Entrar novamente</string>
+    <string name="action_app_enter">ENTRAR NO APLICATIVO</string>
+    <string name="action_accept">LI E ESTOU DE ACORDO</string>
+    <string name="action_personal_data">Dados Pessoais</string>
+    <string name="action_address">Endereço</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_share">COMPARTILHAR</string>
+    <string name="action_share_via">Compartilhar através de</string>
 </resources>
