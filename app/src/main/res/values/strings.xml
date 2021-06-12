@@ -13,6 +13,8 @@
     <string name="action_confirm">Confirmar</string>
     <string name="action_save">Salvar</string>
     <string name="action_enter">Entrar</string>
+    <string name="action_sign_up">Inscreva-se</string>
+    <string name="action_create_account">Criar Conta</string>
     <string name="action_enter_again">Entrar novamente</string>
     <string name="action_app_enter">ENTRAR NO APLICATIVO</string>
     <string name="action_accept">LI E ESTOU DE ACORDO</string>
@@ -22,4 +24,10 @@
     <string name="action_delete">Excluir</string>
     <string name="action_share">COMPARTILHAR</string>
     <string name="action_share_via">Compartilhar através de</string>
+    <string name="welcome">Bem Vindo</string>
+    <string name="placeholder_email">EMAIL</string>
+    <string name="placeholder_password">SENHA</string>
+    <string name="notHasAccount">Não tem uma conta? <b>Inscreva-se aqui</b></string>
+    <string name="hasAccount">Já tem uma conta?  <b>Entre aqui</b></string>
+    <string name="create_account_message">É rápido, só precisamos de um email e da sua senha</string>
 </resources>
