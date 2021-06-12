@@ -1,11 +1,18 @@
 package com.sugarspoon.easyfinance
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sugarspoon.easyfinance.base.BaseActivity
+import com.sugarspoon.easyfinance.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setToolbar(
+            title = getString(R.string.app_name),
+            displayHomeAsUpEnabled = true
+        )
     }
+
+    override fun getViewBinding() = ActivityMainBinding.inflate(layoutInflater)
 }
