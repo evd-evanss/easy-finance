@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/createAccountTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_up"
+        style="@style/Text_Easy.Title"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/verticalMarginXXXLarge"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createAccountSubtitleTv"
+        style="@style/Text_Easy.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        android:text="@string/create_account_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountTitleTv" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/createAccountEmailTil"
+        style="@style/InputTextLayout_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verticalMarginXXLarge"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        android:hint="@string/placeholder_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountSubtitleTv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/createAccountPasswordTil"
+        style="@style/InputTextLayout_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verticalMargin"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        android:hint="@string/placeholder_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_toggle_password"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountEmailTil">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="@integer/password_app_size"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccountActionCreateBt"
+        style="@style/Button_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="16dp"
+        android:text="@string/action_create_account"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountPasswordTil" />
+
+    <TextView
+        android:id="@+id/createAccountNotHasAccountTv"
+        style="@style/Text_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        android:layout_marginBottom="@dimen/verticalMarginXLarge"
+        android:text="@string/hasAccount"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountActionCreateBt"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
