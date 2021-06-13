@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/walletBalanceTv"
+        style="@style/Text_Easy.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginTop="@dimen/verticalMargin"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        android:text="Saldo: R$100,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/walletAddBalanceTil"
+        style="@style/InputTextLayout_Easy.Giant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontalMargin"
+        android:layout_marginTop="@dimen/verticalMarginLarge"
+        android:layout_marginEnd="@dimen/horizontalMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walletBalanceTv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:textSize="@dimen/text_giant"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/walletAddMoneyBt"
+        style="@style/Button_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="16dp"
+        android:text="@string/action_add_ballance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

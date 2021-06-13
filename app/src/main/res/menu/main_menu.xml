@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dashBoardFragment"
+        android:title="@string/dashBoard"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/walletFragment"
+        android:title="@string/wallet"
+        android:icon="@drawable/ic_wallet"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/spending"
+        android:title="@string/controller"
+        android:icon="@drawable/ic_spending"
+        app:showAsAction="ifRoom"/>
+</menu>

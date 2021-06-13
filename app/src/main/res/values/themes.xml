@@ -29,6 +29,7 @@
 
     <style name="Text_Easy.Title">
         <item name="android:textSize">@dimen/text_title</item>
+        <item name="fontFamily">@font/roboto_black</item>
     </style>
 
     <style name="Text_Easy.SubTitle">
@@ -83,11 +84,24 @@
         <item name="fontFamily">@font/roboto_light</item>
     </style>
 
+    <style name="InputTextLayout_Easy.Giant">
+        <item name="endIconMode">clear_text</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textSize">@dimen/text_giant</item>
+        <item name="android:textAppearance">@style/Text_Easy.Title</item>
+        <item name="hintTextAppearance">@style/Text_Easy.Title</item>
+    </style>
+
     <style name="InputTextLayout_Easy.EndIcon" parent="Theme.EasyFinance">
         <item name="endIconMode">clear_text</item>
     </style>
 
     <style name="ToolbarDefault" parent="Widget.AppCompat.Toolbar">
         <item name="android:textAppearance">@style/Text_Easy.Body</item>
+    </style>
+
+    <style name="CardItem_Easy">
+        <item name="backgroundTint">@color/color_on_primary</item>
     </style>
 </resources>

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewbinding.ViewBinding
 import com.sugarspoon.easyfinance.R
+import kotlinx.android.synthetic.main.easy_toolbar.*
 
 abstract class BaseActivity<Binding : ViewBinding> : AppCompatActivity() {
 
@@ -39,6 +40,12 @@ abstract class BaseActivity<Binding : ViewBinding> : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(displayHomeAsUpEnabled)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
         setTitle(title)
+    }
+
+    fun setEasyToolbar(
+        title: String = ""
+    ) {
+        toolbarTextTitle.text = title
     }
 
     //MENU METHODS

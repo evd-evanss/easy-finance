@@ -30,4 +30,12 @@
     <string name="notHasAccount">Não tem uma conta? <b>Inscreva-se aqui</b></string>
     <string name="hasAccount">Já tem uma conta?  <b>Entre aqui</b></string>
     <string name="create_account_message">É rápido, só precisamos de um email e da sua senha</string>
+    <string name="dashBoard">DashBoard</string>
+    <string name="wallet">Carteira</string>
+    <string name="dashboard_income_title">RECEITA</string>
+    <string name="dashboard_spending_title">DESPESAS</string>
+    <string name="dashboard_input">ENTRADAS</string>
+    <string name="dashboard_output">SAÍDAS</string>
+    <string name="controller">Gestão</string>
+    <string name="action_add_ballance">Adcionar Saldo</string>
 </resources>

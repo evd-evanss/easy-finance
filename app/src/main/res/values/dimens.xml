@@ -38,9 +38,11 @@
     <dimen name="text_subtitle">24sp</dimen>
     <dimen name="text_subtitle_small">18sp</dimen>
     <dimen name="text_body">16sp</dimen>
+    <dimen name="text_giant">120sp</dimen>
     <!--BUTTON-->
     <dimen name="button_size">60dp</dimen>
     <dimen name="stroke_size">2dp</dimen>
+    <dimen name="dashboard_card_size">100dp</dimen>
 
 
 </resources>

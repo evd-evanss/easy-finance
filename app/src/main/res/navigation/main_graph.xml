@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        tools:layout="@layout/fragment_dashboard"
+        android:name="com.sugarspoon.easyfinance.ui.dashboard.DashBoardFragment"
+        android:label="DashBoard" />
+
+    <fragment
+        android:id="@+id/walletFragment"
+        tools:layout="@layout/fragment_wallet"
+        android:name="com.sugarspoon.easyfinance.ui.wallet.WalletFragment"
+        android:label="Carteira" />
+</navigation>
