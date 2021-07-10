@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/Text_Easy.SubTitle"
+            android:id="@+id/spendingTv"
+            android:text="@string/label_spending"
+            android:layout_marginTop="@dimen/verticalMargin"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spendingDescriptionTil"
+            style="@style/InputTextLayout_Easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginTop="@dimen/verticalMarginLarge"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:hint="@string/label_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spendingValueTil"
+            style="@style/InputTextLayout_Easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginTop="@dimen/verticalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:hint="@string/label_value">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spendingTypeTil"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            android:inputType="none"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginTop="@dimen/verticalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:hint="@string/label_type">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/menuAutocomplete"
+                android:fontFamily="@font/roboto"
+                android:layout_width="match_parent"
+                android:inputType="none"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </TableLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/spendingAddBt"
+        style="@style/Button_Easy.Outlined"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/verticalMargin"
+        android:text="@string/action_add"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

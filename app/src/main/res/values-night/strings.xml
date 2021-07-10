@@ -13,5 +13,27 @@
     <string name="dashboard_input">ENTRADAS</string>
     <string name="dashboard_output">SAÍDAS</string>
     <string name="controller">Gestão</string>
-    <string name="action_add_ballance">Adcionar Saldo</string>
+    <string name="action_add">Adicionar</string>
+    <string name="wallet_value_10">10</string>
+    <string name="wallet_value_50">50</string>
+    <string name="wallet_value_100">100</string>
+    <string name="wallet_value_1000">1000</string>
+    <string name="balance"><b>Saldo:</b> %s</string>
+    <string name="label_description">Descrição</string>
+    <string name="label_value">Valor</string>
+    <string name="label_payment">Pago</string>
+    <string name="label_type">Tipo</string>
+    <string name="label_spending"><b>Despesa: R$</b> %s</string>
+    <string name="error_description">A descrição não pode ser vazia</string>
+    <string name="error_value">Valor inválido</string>
+    <string name="error_type">Selecione uma categoria</string>
+    <string name="placeholder_empty_label">Não existem resultados</string>
+    <string name="placeholder_error_button_label">Tentar novamente</string>
+
+    <string name="currency_value">R$ %s</string>
+    <string name="good_finance">Suas finanças estão indo bem</string>
+    <string name="bad_finance">Suas finanças estão indo mau</string>
+    <string name="empty_title">Você ainda não possui saídas, entre em gestão e inclua sua primeira saída</string>
+    <string name="no_data_set">Sem dados para mostrar no momento</string>
+    <string name="balanced_finance">Suas Finanças estão equilibradas</string>
 </resources>

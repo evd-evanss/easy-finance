@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorRed"
+    app:cardCornerRadius="@dimen/cornerMedium"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    android:layout_marginTop="@dimen/verticalMarginSmall"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:theme="@style/Text_Easy.SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemSpendingTypeTv"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:textColor="@color/color_on_primary"
+            tools:text="Pagamentos" />
+
+        <TextView
+            android:theme="@style/Text_Easy"
+            android:id="@+id/itemSpendingDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/color_on_primary"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            tools:text="Cartão de Crédito" />
+
+        <TextView
+            android:id="@+id/itemSpendingValueTv"
+            android:fontFamily="@font/roboto_light"
+            android:layout_width="match_parent"
+            android:theme="@style/Text_Easy"
+            android:textColor="@color/color_on_primary"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/verticalMargin"
+            tools:text="R$ 500, 00" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

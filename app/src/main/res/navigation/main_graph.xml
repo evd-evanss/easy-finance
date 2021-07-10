@@ -16,4 +16,10 @@
         tools:layout="@layout/fragment_wallet"
         android:name="com.sugarspoon.easyfinance.ui.wallet.WalletFragment"
         android:label="Carteira" />
+
+    <fragment
+        android:id="@+id/spendingFragment"
+        tools:layout="@layout/fragment_spending"
+        android:name="com.sugarspoon.easyfinance.ui.spending.SpendingFragment"
+        android:label="Gestão" />
 </navigation>

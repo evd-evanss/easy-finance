@@ -6,13 +6,13 @@
 
     <TextView
         android:id="@+id/walletBalanceTv"
-        style="@style/Text_Easy.Title"
+        style="@style/Text_Easy.SubTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/horizontalMargin"
         android:layout_marginTop="@dimen/verticalMargin"
         android:layout_marginEnd="@dimen/horizontalMargin"
-        android:text="Saldo: R$100,00"
+        android:text="@string/balance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,19 +31,146 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:textSize="@dimen/text_giant"/>
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verticalMargin"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walletAddBalanceTil">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/walletAddMoneyBt"
+            app:layout_constraintTop_toBottomOf="@+id/walletAddBalanceTil">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_circle_icon" />
+
+                <TextView
+                    android:id="@+id/walletAdd10Tv"
+                    style="@style/Text_Easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/text_title"
+                    android:text="@string/wallet_value_10"
+                    android:textColor="?attr/text_color_secondary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_circle_icon" />
+
+                <TextView
+                    android:id="@+id/walletAdd50Tv"
+                    style="@style/Text_Easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/text_title"
+                    android:text="@string/wallet_value_50"
+                    android:textColor="?attr/text_color_secondary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_circle_icon" />
+
+                <TextView
+                    android:id="@+id/walletAdd100Tv"
+                    style="@style/Text_Easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/text_title"
+                    android:text="@string/wallet_value_100"
+                    android:textColor="?attr/text_color_secondary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_circle_icon" />
+
+                <TextView
+                    android:id="@+id/walletAdd1000Tv"
+                    style="@style/Text_Easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/text_title"
+                    android:text="@string/wallet_value_1000"
+                    android:textColor="?attr/text_color_secondary" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/walletAddMoneyBt"
         style="@style/Button_Easy"
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_size"
-        android:layout_margin="16dp"
-        android:text="@string/action_add_ballance"
-        android:textStyle="bold"
+        android:layout_margin="@dimen/verticalMargin"
+        android:text="@string/action_add"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/walletClearMoneyBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/walletClearMoneyBt"
+        style="@style/Button_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/verticalMargin"
+        android:backgroundTint="@color/colorRed"
+        android:text="@string/action_clear"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

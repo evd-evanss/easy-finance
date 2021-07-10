@@ -67,6 +67,19 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation"
 
+    // Coroutines
+    def coroutines_version = '1.4.2'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+
     implementation "com.google.dagger:hilt-android:2.31-alpha"
     kapt "com.google.dagger:hilt-android-compiler:2.31-alpha"
+
+    def room_version = '2.3.0'
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }

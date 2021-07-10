@@ -12,5 +12,17 @@
     <color name="color_primary">#373A4D</color>
     <color name="color_primary_variant">#8F92A9</color>
     <color name="color_on_primary">#F5F5FA</color>
+    <color name="tintColor">#F5F5FA</color>
+    <color name="card_background">#F5F5FA</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorOrange">#FFC107</color>
+    <color name="colorViolet">#673AB7</color>
+    <color name="colorCyan">#00BCD4</color>
+    <color name="colorGreenLight">#CDDC39</color>
+    <color name="colorVioletLight">#EA80FC</color>
+    <color name="colorGreenMedium">#84FFFF</color>
+    <color name="colorPink">#FF80AB</color>
 
 </resources>

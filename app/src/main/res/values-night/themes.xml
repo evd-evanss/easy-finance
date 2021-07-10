@@ -13,6 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/color_primary</item>
         <!-- Customize your theme here. -->
         <item name="colorControlActivated">@color/white</item>
+        <item name="tintColor">@color/color_primary</item>
+        <item name="text_color">@color/white</item>
+        <item name="text_color_secondary">@color/white</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.EasyFinance">
@@ -96,7 +99,7 @@
         <item name="android:textAppearance">@style/Text_Easy.Body</item>
     </style>
 
-    <style name="CardItem_Easy">
+    <style name="CardItem_Easy" parent="CardView">
         <item name="backgroundTint">@color/color_primary</item>
     </style>
 </resources>

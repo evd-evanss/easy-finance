@@ -15,7 +15,7 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/spending"
+        android:id="@+id/spendingFragment"
         android:title="@string/controller"
         android:icon="@drawable/ic_spending"
         app:showAsAction="ifRoom"/>
